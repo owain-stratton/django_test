@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Globalmouth Team Directory</title>
+   </head>
+
+   <body>
+      <h1>Globalmouth Team Directory</h1>
+      {% for person in people %}
+         <img src="{{ person.image }}" alt="{{ person.name }}"/>
+         <p>{{ person.name }}</p>
+         <p>{{ person.title }}</p>
+         <p>{{ person.email }}</p>
+      {% endfor %}
+   </body>
+</html>
